@@ -1,0 +1,278 @@
+/* ================================
+   ADD MEMORY PAGE
+================================ */
+
+.add-memory {
+    min-height: 100vh !important;
+    width: 100% !important;
+
+    background: linear-gradient(
+        135deg,
+        #f8f9ff 0%,
+        #eee9ff 50%,
+        #f5f7ff 100%
+    ) !important;
+
+    padding: 35px 20px 70px !important;
+    box-sizing: border-box !important;
+}
+
+/* ================================
+   HEADING
+================================ */
+
+.add-memory h2 {
+    text-align: center;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #16265d;
+
+    margin: 10px 0 30px;
+}
+
+/* ================================
+   FORM CARD
+================================ */
+
+.add-memory form {
+    width: 100%;
+    max-width: 450px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(60, 60, 120, 0.12);
+
+    box-sizing: border-box;
+}
+
+/* ================================
+   LABEL
+================================ */
+
+.add-memory label {
+    display: block;
+
+    margin-top: 17px;
+    margin-bottom: 7px;
+
+    color: #1d2452;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.add-memory label:first-of-type {
+    margin-top: 0;
+}
+
+/* ================================
+   INPUT / TEXTAREA / SELECT
+================================ */
+
+.add-memory input,
+.add-memory textarea,
+.add-memory select {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-size: 15px;
+
+    font-family: "Segoe UI", sans-serif;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition: 0.2s ease;
+}
+
+/* ================================
+   TEXTAREA
+================================ */
+
+.add-memory textarea {
+    height: 100px;
+
+    resize: vertical;
+}
+
+/* ================================
+   FOCUS
+================================ */
+
+.add-memory input:focus,
+.add-memory textarea:focus,
+.add-memory select:focus {
+    border-color: #7357ff;
+
+    box-shadow:
+        0 0 0 3px rgba(115, 87, 255, 0.12);
+}
+
+/* ================================
+   FILE INPUT
+================================ */
+
+.add-memory input[type="file"] {
+    padding: 9px;
+
+    cursor: pointer;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.add-memory .buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 28px;
+}
+
+/* ================================
+   SAVE + CANCEL
+================================ */
+
+.add-memory .buttons button {
+    flex: 1;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* SAVE */
+
+.add-memory .buttons button[type="submit"] {
+    background: linear-gradient(
+        90deg,
+        #7357ff,
+        #4f7cff
+    );
+}
+
+.add-memory .buttons button[type="submit"]:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(109, 60, 255, 0.25);
+}
+
+.add-memory .buttons button[type="reset"],
+.add-memory .buttons button[type="button"] {
+    background: #e63946 !important;
+    color: white;
+    border: none;
+    border-radius: 7px;
+
+    flex: 1;
+    height: 46px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add-memory .buttons button[type="reset"]:hover,
+.add-memory .buttons button[type="button"]:hover {
+    background: #d62839 !important;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .add-memory {
+        padding: 25px 15px 50px;
+    }
+
+    .add-memory h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    .add-memory form {
+        padding: 25px 20px;
+    }
+
+    .add-memory .buttons {
+        flex-direction: column;
+    }
+
+    .add-memory .buttons button {
+        width: 100%;
+    }
+}
+body {
+    background: #eee9ff !important;
+}
+
+.add-memory {
+    min-height: 100vh !important;
+    width: 100% !important;
+    background: #eee9ff !important;
+}
+/* ================================
+   ADD MEMORY BACKGROUND
+================================ */
+
+.add-memory {
+    min-height: 100vh !important;
+    width: 100% !important;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(181, 154, 248, 0.25),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(99, 119, 232, 0.20),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f8f9ff 0%,
+            #eee9ff 50%,
+            #f5f7ff 100%
+        ) !important;
+}

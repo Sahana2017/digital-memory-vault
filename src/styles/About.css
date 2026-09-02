@@ -1,0 +1,662 @@
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-page {
+    min-height: 100vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.about-navbar {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 40px;
+
+    position: relative;
+    z-index: 20;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.about-logo-section {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.about-logo {
+    width: 130px;
+    height: 80px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-right: -20px;
+}
+
+.about-logo-section h2 {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #1d2452;
+
+    line-height: 1.1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+   ========================================= */
+
+.about-nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 26px;
+
+    margin-left: 90px;
+}
+
+.about-nav-links a {
+    text-decoration: none;
+
+    color: #1d2452;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    white-space: nowrap;
+}
+
+.about-nav-links a:hover {
+    color: #5c4cff;
+}
+
+
+/* =========================================
+   ACTIVE ABOUT
+   ========================================= */
+
+.about-nav-links a.active {
+    color: #5c4cff;
+}
+
+.about-nav-links a.active::after {
+    content: "";
+
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    margin-top: 6px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #7357ff,
+        #4f7cff
+    );
+}
+
+
+/* =========================================
+   NAVIGATION BUTTONS
+   ========================================= */
+
+.about-nav-buttons {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   SIGN IN BUTTON
+   ========================================= */
+
+.about-signin {
+    width: 140px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 2px solid #7357ff;
+
+    border-radius: 30px;
+
+    color: #7357ff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.about-signin:hover {
+    background: linear-gradient(
+        90deg,
+        #7357ff,
+        #4f7cff
+    );
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(109, 60, 255, 0.25);
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+   ========================================= */
+
+.about-register {
+    width: 140px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #7357ff,
+        #4f7cff
+    );
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.about-register:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(109, 60, 255, 0.3);
+}
+
+/* =========================================
+   ABOUT CONTENT - CENTER LEFT
+   ========================================= */
+
+.about-content {
+    width: 100%;
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    align-items: center;
+
+    /* Center content in the left portion */
+    padding: 40px 0 70px 7%;
+
+    position: relative;
+    z-index: 10;
+
+    box-sizing: border-box;
+}
+
+.about-text {
+    width: 680px;
+    max-width: 680px;
+
+    margin-left: 0;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* =========================================
+   ABOUT TITLE
+   ========================================= */
+
+.about-text h1 {
+    margin: 0 0 22px 0;
+
+    font-size: 54px;
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    color: #12255d;
+}
+
+.about-text h1 span {
+    background: linear-gradient(
+        90deg,
+        #6d3cff,
+        #2f80ff
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================
+   SMALL PURPLE LINE
+   ========================================= */
+
+/* REMOVE the line completely */
+.about-text h1::after {
+    display: none;
+}
+
+
+/* =========================================
+   ABOUT PARAGRAPHS
+   ========================================= */
+
+.about-text p {
+    margin: 0 0 24px 0;
+
+    color: #5d709c;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+}
+
+.about-text .about-intro {
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 26px;
+
+    color: #536b9d;
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+   ========================================= */
+
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.about-highlight {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 16px 20px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(88, 72, 180, 0.10);
+}
+
+.about-highlight-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #efedff;
+
+    font-size: 21px;
+}
+
+.about-highlight h3 {
+    margin: 0 0 5px 0;
+
+    font-size: 18px;
+
+    color: #172b68;
+
+    font-weight: 700;
+}
+
+.about-highlight p {
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #66759a;
+}
+
+
+/* =========================================
+   RIGHT SIDE WAVE
+   ========================================= */
+
+.about-wave {
+    position: absolute;
+
+    top: 90px;
+    right: 0;
+
+    width: 30%;
+    height: calc(100% - 90px);
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.about-wave svg {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+
+/* =========================================
+   NAVBAR ABOVE EVERYTHING
+   ========================================= */
+
+.about-navbar {
+    position: relative;
+    z-index: 20;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .about-content {
+        padding: 50px 6%;
+    }
+
+    .about-text {
+        width: 650px;
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 48px;
+    }
+
+    .about-wave {
+        width: 35%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .about-content {
+       
+
+        padding: 50px 25px 80px;
+
+        align-items: flex-start;
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 40px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-wave {
+        width: 45%;
+        opacity: 0.5;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .about-content {
+        padding: 40px 20px 70px;
+    }
+
+    .about-text h1 {
+        font-size: 34px;
+    }
+
+    .about-text .about-intro {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    .about-navbar {
+        padding: 0 25px;
+    }
+
+    .about-logo {
+        width: 110px;
+        height: 75px;
+    }
+
+    .about-logo-section h2 {
+        font-size: 15px;
+    }
+
+    .about-nav-links {
+        margin-left: 45px;
+
+        gap: 20px;
+    }
+
+    .about-nav-links a {
+        font-size: 17px;
+    }
+
+    .about-signin,
+    .about-register {
+        width: 120px;
+
+        font-size: 16px;
+    }
+
+    .about-content {
+        padding-left: 6%;
+    }
+
+    .about-text {
+        width: 58%;
+    }
+
+    .about-text h1 {
+        font-size: 46px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .about-navbar {
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .about-logo {
+        width: 90px;
+        height: 65px;
+    }
+
+    .about-logo-section h2 {
+        font-size: 14px;
+    }
+
+    .about-nav-links {
+        display: none;
+    }
+
+    .about-nav-buttons {
+        margin-left: auto;
+    }
+
+    .about-signin,
+    .about-register {
+        width: 105px;
+        height: 44px;
+
+        font-size: 14px;
+    }
+
+    .about-content {
+       
+
+        padding: 60px 25px 100px;
+
+        align-items: flex-start;
+    }
+
+    .about-text {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 40px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .about-wave {
+        width: 65%;
+
+        opacity: 0.45;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .about-logo {
+        width: 75px;
+        height: 60px;
+    }
+
+    .about-logo-section h2 {
+        font-size: 13px;
+    }
+
+    .about-signin,
+    .about-register {
+        width: 95px;
+        height: 42px;
+
+        font-size: 13px;
+    }
+
+    .about-text h1 {
+        font-size: 34px;
+    }
+
+    .about-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

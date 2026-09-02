@@ -1,0 +1,122 @@
+.my-memories {
+  min-height: calc(100vh - 85px);
+  background: #f5f6fa;
+  padding: 30px 5%;
+  box-sizing: border-box;
+}
+
+.my-memories h1 {
+  text-align: center;
+  font-size: 26px;
+  margin: 0 0 32px;
+  color: #222;
+}
+
+.memories-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.memory-card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px 25px 24px;
+  min-height: 265px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.memory-image {
+  height: 55px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 16px;
+  color: #111;
+}
+
+.memory-card h2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 0 20px;
+  color: #111;
+}
+
+.memory-card p {
+  font-size: 16px;
+  margin: 0 0 14px;
+  color: #333;
+}
+
+.memory-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 55px;
+}
+
+.memory-actions button,
+.cancel-btn {
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* View - BLUE */
+.view-btn {
+  background: #087ff5;
+}
+
+.view-btn:hover {
+  background: #006fe6;
+}
+
+/* Edit - BLUE */
+.edit-btn {
+  background: #087ff5;
+}
+
+.edit-btn:hover {
+  background: #006fe6;
+}
+
+/* Delete - BLUE */
+.delete-btn {
+  background: #087ff5;
+}
+
+.delete-btn:hover {
+  background: #006fe6;
+}
+
+/* Cancel - RED */
+.cancel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  padding: 10px 25px;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .memories-container {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-actions {
+    padding: 0 20px;
+  }
+}

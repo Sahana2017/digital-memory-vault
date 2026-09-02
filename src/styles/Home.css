@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8f9ff;
+    overflow-x:hidden;
+}
+
+/* ================= WAVE BACKGROUND ================= */
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.wave-background svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 1000;
+}
+
+.hero {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-left {
+    flex: 0 0 50%;
+    max-width: 650px;
+    padding-top: -80px;
+    margin-left: 0;
+
+    position: relative;
+    z-index: 10;
+
+    animation: slideLeft .8s ease;
+}
+.hero-right {
+    flex: 0 0 50%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-right: -60px;
+
+    position: relative;
+    z-index: 10;
+}
+
+.hero-image {
+    width: 800px;
+    max-width: none;
+    height: auto;
+
+    position: relative;
+    z-index: 10;
+
+    animation: float 5s ease-in-out infinite;
+
+    filter: drop-shadow(
+        0 30px 45px rgba(80,80,255,.25)
+    );
+}
+.hero-title {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+
+    margin-bottom: 25px;
+
+    transform: none;
+
+    white-space: normal;
+}
+/* ================= NAVBAR ================= */
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    height:90px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 40px;
+
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+/* Left Part */
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:-10px;
+}
+
+.logo{
+    width:130px;
+    height: 80px;
+    margin-right: -3px;
+}
+
+.logo-section h2{
+    font-size:16px;
+    font-weight:700;
+    color:#1d2452;
+    line-height: 1.1;
+    margin-left: -20px;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:26px;
+    margin-left:90px;   /* Moves the menu towards the center/right */
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#1d2452;
+    font-size:19px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#5c4cff;
+}
+
+/* Right Buttons */
+/* Right Buttons */
+
+.nav-buttons{
+    margin-left:auto;
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+/* Sign In Button */
+
+.SignIn-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:140px;
+    height:48px;
+
+    background:#fff;
+    border:2px solid #7357ff;
+    border-radius:30px;
+
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+
+    /* Gradient Text */
+    background-image:linear-gradient(90deg,#7357ff,#4f7cff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+
+    transition:0.3s ease;
+}
+
+/* Register Button */
+
+.Register-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:140px;
+    height:48px;
+
+    text-decoration:none;
+    color:white;
+
+    font-size:18px;
+    font-weight:600;
+
+    border-radius:30px;
+    background:linear-gradient(90deg,#7357ff,#4f7cff);
+
+    transition:0.3s;
+}
+
+/* Hover Effect */
+
+.SignIn-btn:hover{
+    background:linear-gradient(90deg,#7357ff,#4f7cff);
+    -webkit-text-fill-color:white;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(109,60,255,.3);
+}
+.Register-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(109,60,255,.3);
+}
+/* ================= HERO ================= */
+.hero{
+width:100%;
+max-width:1400px;
+margin:0 auto;
+padding:80px 6% 60px;
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+ position:relative;
+    z-index:10;
+}
+.hero-left{
+    flex:1;
+    max-width:600px;
+    padding-top:20px;
+    margin-left:0;
+}
+
+
+.hero-title{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    transform:translateX(-10px);
+}
+
+.dark{
+    color: #16265d;
+}
+
+.gradient{
+    background: linear-gradient(90deg,#6d3cff,#2f80ff);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line{
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg,#6d3cff,#2f80ff);
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+/* ================= BUTTONS ================= */
+
+.buttons{
+    display:flex;
+    align-items:center;
+    gap: -15px;
+    margin-top:35px;
+}
+btn:last-child{
+    margin-left: -50px;
+}
+.btn{
+    width:140px;
+    height:56px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50px;
+
+    text-decoration:none;
+    color:white;
+
+    font-size:20px;
+    font-weight:700;
+
+    background:linear-gradient(90deg,#6d3cff,#2f80ff);
+
+    box-shadow:0 15px 30px rgba(91,91,255,.25);
+
+    transition:.3s;
+}
+.btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(92, 72, 255, 0.35);
+}
+/* ================= HERO IMAGE ================= */
+
+.hero-right {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 0;
+
+    position: relative;
+    z-index: 10;
+}
+
+.hero-image{
+    width:620px;
+    max-width:100%;
+    z-index:5;
+    animation:float 5s ease-in-out infinite;
+    filter:drop-shadow(0 30px 45px rgba(80,80,255,.25));
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ================= DECORATIONS ================= */
+
+
+
+.hero-right::after{
+    content:"";
+    position:absolute;
+
+    width:170px;
+    height:170px;
+
+    border:2px dashed rgba(255,255,255,.5);
+    border-radius:50%;
+
+    right:40px;
+    top:70px;
+}
+
+/* ================= BACKGROUND SHAPES ================= */
+
+.shape{
+    position:absolute;
+    border-radius:50%;
+    z-index:0;
+}
+
+.shape1{
+    width:260px;
+    height:260px;
+    background:rgba(108,76,245,.08);
+    top:-120px;
+    left:-120px;
+}
+
+.shape2{
+    width:320px;
+    height:320px;
+    background:rgba(47,128,255,.08);
+    bottom:-150px;
+    right:-150px;
+}
+
+.shape3{
+    width:150px;
+    height:150px;
+    background:rgba(108,76,245,.06);
+    bottom:90px;
+    left:45%;
+}
+
+/* ================= ANIMATION ================= */
+
+.hero-left{
+    animation:slideLeft .8s ease;
+}
+
+.hero-right{
+    animation:slideRight .8s ease;
+}
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes slideRight{
+
+    from{
+        opacity:0;
+        transform:translateX(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+.hero-image:hover{
+    transform:scale(1.03);
+    transition:.4s;
+}
+/* ================= TABLET ================= */
+
+@media (max-width:1100px){
+
+.navbar{
+    padding:15px 8px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:50px;
+    padding: 40px 5%;
+}
+
+.hero-left{
+    max-width:100%;
+}
+
+.hero-title{
+    font-size:56px;
+}
+
+.line{
+    margin:10px 0;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.hero-right{
+    justify-content:center;
+}
+
+.hero-image{
+    width:550px;
+}
+
+.shape3{
+    display:none;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+    gap:20px;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+}
+
+.logo-text h2{
+    font-size:22px;
+}
+
+.nav-links{
+    display:none;
+}
+
+.hero{
+    margin-top:20px;
+}
+
+.hero-title{
+    font-size:68px;
+    font-weight:800;
+    line-height:1.08;
+    margin-left:-30px;
+}
+
+.dark{
+    color:#15224f;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#6d3cff,#2f80ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.line{
+    margin:25px auto;
+}
+
+.buttons{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.btn{
+    width:190px;
+    height:54px;
+    font-size:18px;
+    transition: all 0.3s ease;
+}
+
+.hero-right{
+    justify-content:center;
+}
+
+.hero-image{
+    width:360px;
+}
+
+.shape1{
+    width:170px;
+    height:170px;
+}
+
+.shape2{
+    width:220px;
+    height:220px;
+}
+
+.shape3{
+    display:none;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+.logo{
+    width:65px;
+    height:65px;
+}
+
+.logo-text h2{
+    font-size:18px;
+}
+
+.hero-title{
+    font-size:34px;
+}
+
+.hero-image{
+    width:290px;
+}
+
+.btn{
+    width:170px;
+    height:50px;
+    font-size:16px;
+}
+
+}
+.hero-subtitle{
+    font-size: 18px;
+    color: #6b7280;
+    font-weight: 400;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 0 30px 0;
+}
+.features-section,
+.about-section,
+.contact-section{
+    width:100%;
+    min-height:100vh;
+    padding:100px 80px;
+    background:#fff;
+}
+
+.features-section h2,
+.about-section h2,
+.contact-section h2{
+    font-size:42px;
+    color:#16265d;
+    margin-bottom:20px;
+}
+
+.features-section p,
+.about-section p,
+.contact-section p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+}
+.features{
+padding:80px 8%;
+text-align:center;
+background:transparent;
+}
+
+.features h2{
+    font-size:38px;
+    color:#1e3a8a;
+    margin-bottom:40px;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:rgba(255,255,255,0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding:30px 20px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.feature-card h3{
+    color:#2563eb;
+    margin-bottom:12px;
+}
+
+.feature-card p{
+    color:#555;
+    line-height:1.6;
+}
+/* =========================================
+   REFERENCE STYLE BACKGROUND WAVES
+   ========================================= */
+
+.bg-waves {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Main purple flowing wave */
+
+.wave-purple {
+    position: absolute;
+
+    width: 1050px;
+    height: 850px;
+
+    right: -250px;
+    top: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #e1d3ff 0%,
+        #b995ff 35%,
+        #8061f2 70%,
+        #5f75ed 100%
+    );
+
+    border-radius: 70% 0 0 45%;
+
+    transform: rotate(-13deg);
+}
+
+
+/* Blue wave going across the bottom */
+
+.wave-blue {
+    position: absolute;
+
+    width: 1150px;
+    height: 260px;
+
+    right: -150px;
+    bottom: -80px;
+
+    background: linear-gradient(
+        100deg,
+        #a997ff,
+        #707bf0,
+        #5d72e9
+    );
+
+    border-radius: 55% 45% 0 0;
+
+    transform: rotate(-5deg);
+}
+
+
+/* Light purple flowing band */
+
+.wave-light {
+    position: absolute;
+
+    width: 1050px;
+    height: 150px;
+
+    right: -120px;
+    bottom: 20px;
+
+    background: rgba(215, 201, 255, 0.85);
+
+    border-radius: 50%;
+
+    transform: rotate(-8deg);
+}
+
+
+/* =========================================
+   KEEP CONTENT ABOVE WAVES
+   ========================================= */
+
+.navbar {
+    position: absolute;
+    z-index: 20;
+}
+
+.hero {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-left,
+.hero-right {
+    position: relative;
+    z-index: 10;
+}
+/* =========================================
+   WAVY BACKGROUND
+   ========================================= */
+
+.bg-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.bg-waves svg {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+}
+
+/* =========================================
+   CONTENT ABOVE WAVES
+   ========================================= */
+
+.navbar {
+    position: absolute;
+    z-index: 20;
+}
+
+.hero {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-left {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-right {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 10;
+}

@@ -1,0 +1,206 @@
+/* ================================
+   EDIT MEMORY PAGE
+================================ */
+
+.edit-memory {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #f8f9ff;
+
+    padding: 35px 20px 70px;
+
+    box-sizing: border-box;
+}
+
+/* ================================
+   HEADING - TOP CENTER
+================================ */
+
+.edit-memory h2 {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #16265d;
+
+    margin: 10px 0 30px;
+}
+
+/* ================================
+   FORM
+================================ */
+
+.edit-memory form {
+    width: 100%;
+    max-width: 450px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(60, 60, 120, 0.12);
+
+    box-sizing: border-box;
+}
+
+/* ================================
+   LABELS
+================================ */
+
+.edit-memory label {
+    display: block;
+
+    margin-top: 17px;
+    margin-bottom: 7px;
+
+    color: #1d2452;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.edit-memory label:first-of-type {
+    margin-top: 0;
+}
+
+/* ================================
+   INPUTS
+================================ */
+
+.edit-memory input,
+.edit-memory textarea,
+.edit-memory select {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-size: 15px;
+
+    font-family: "Segoe UI", sans-serif;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.edit-memory textarea {
+    height: 100px;
+
+    resize: vertical;
+}
+
+/* ================================
+   FOCUS
+================================ */
+
+.edit-memory input:focus,
+.edit-memory textarea:focus,
+.edit-memory select:focus {
+    border-color: #7357ff;
+
+    box-shadow: 0 0 0 3px rgba(115, 87, 255, 0.12);
+}
+
+/* ================================
+   FILE
+================================ */
+
+.edit-memory input[type="file"] {
+    padding: 9px;
+    cursor: pointer;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.edit-memory .buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.edit-memory .buttons button {
+    flex: 1;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* UPDATE */
+
+.edit-memory .buttons button[type="submit"] {
+    background: #168bf5;
+}
+
+.edit-memory .buttons button[type="submit"]:hover {
+    background: #087be0;
+
+    transform: translateY(-2px);
+}
+
+/* CANCEL */
+
+.edit-memory .buttons button[type="button"] {
+    background: #e63946;
+}
+
+.edit-memory .buttons button[type="button"]:hover {
+    background: #d62839;
+
+    transform: translateY(-2px);
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .edit-memory {
+        padding: 25px 15px 50px;
+    }
+
+    .edit-memory h2 {
+        font-size: 34px;
+    }
+
+    .edit-memory form {
+        padding: 25px 20px;
+    }
+
+    .edit-memory .buttons {
+        flex-direction: column;
+    }
+}

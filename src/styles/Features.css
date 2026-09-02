@@ -1,0 +1,431 @@
+/* ================================
+   FEATURES PAGE
+================================ */
+
+.features-page {
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.features-navbar {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 40px;
+
+    position: relative;
+    z-index: 20;
+
+    background: white;
+
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.features-logo-section {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.features-logo {
+    width: 130px;
+    height: 80px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-right: -20px;
+}
+
+.features-logo-section h2 {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #1d2452;
+
+    line-height: 1.1;
+
+    white-space: nowrap;
+}
+
+
+/* ================================
+   NAV LINKS
+================================ */
+
+.features-nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 26px;
+
+    margin-left: 90px;
+}
+
+.features-nav-links a {
+    text-decoration: none;
+
+    color: #1d2452;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.features-nav-links a:hover {
+    color: #5c4cff;
+}
+
+
+/* ACTIVE FEATURES */
+
+.features-nav-links a.active {
+    color: #5c4cff;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.features-nav-buttons {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* SIGN IN */
+
+.features-signin {
+    width: 140px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #7357ff;
+    border-radius: 30px;
+
+    background: white;
+
+    color: #7357ff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+
+/* REGISTER */
+
+.features-register {
+    width: 140px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #7357ff,
+        #4f7cff
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   FEATURES CONTENT
+================================ */
+
+.features-content {
+    position: relative;
+    z-index: 10;
+
+    text-align: center;
+
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.features-content h1 {
+    margin: 0;
+
+    font-size: 62px;
+    font-weight: 700;
+
+    color: #12255d;
+}
+
+.features-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+
+    color: #657293;
+}
+
+.features-line {
+    width: 78px;
+    height: 5px;
+
+    margin: 0 auto 38px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #7357ff,
+        #4f7cff
+    );
+}
+
+
+/* ================================
+   FEATURE GRID
+================================ */
+
+.features-grid {
+    width: 100%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   FEATURE CARD
+================================ */
+
+.feature-card {
+    min-height: 230px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(88, 72, 180, 0.12);
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(88, 72, 180, 0.18);
+}
+
+
+/* ================================
+   ICON
+================================ */
+
+.feature-icon {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #efedff;
+
+    color: #6046ed;
+
+    font-size: 32px;
+}
+
+
+/* ================================
+   CARD TITLE
+================================ */
+
+.feature-card h2 {
+    margin: 0 0 14px;
+
+    color: #13265e;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+
+/* ================================
+   CARD TEXT
+================================ */
+
+.feature-card p {
+    margin: 0;
+
+    color: #667292;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+
+/* ================================
+   RIGHT WAVE
+================================ */
+
+.features-contact-wave {
+    position: absolute;
+
+    top: 90px;
+    right: 0;
+
+    width: 38%;
+    height: calc(100% - 90px);
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.features-contact-wave svg {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+
+    .features-navbar {
+        padding: 0 25px;
+    }
+
+    .features-nav-links {
+        margin-left: 40px;
+        gap: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .features-navbar {
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .features-nav-links {
+        display: none;
+    }
+
+    .features-nav-buttons {
+        margin-left: auto;
+    }
+
+    .features-logo {
+        width: 90px;
+        height: 65px;
+    }
+
+    .features-content {
+        padding-top: 40px;
+    }
+
+    .features-content h1 {
+        font-size: 44px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-signin,
+    .features-register {
+        width: 110px;
+        height: 44px;
+
+        font-size: 14px;
+    }
+}
